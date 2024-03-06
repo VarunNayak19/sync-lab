@@ -1,0 +1,128 @@
+.editor-page-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.left-section{
+    width: 200px;
+    height: 100%;
+    background-color: var(--primaryColor);
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+}
+.right-section{
+    flex: 1;
+    height: 100%;
+    background-color: var(--secondaryColor);
+}
+
+.left-bottom-section{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.left-top-section{
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+.logo-css-editor{
+    width: 80%;
+    margin: 0 auto;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(100%) hue-rotate(0deg) !important;
+}
+.logo-container{
+    width: 95%;
+    margin: 0 auto;
+    padding: 15px;
+    display: flex;
+    border-bottom: 1px solid var(--secondaryColor);
+    /* clip-path: polygon(0 0, 100% 0, 100% 40%, 0% 100%); */
+}
+.divider{
+    width: 90%;
+    height: 5px;
+    color: var(--secondaryColor);
+}
+
+.copy-btn,.leave-btn{
+    width: 90%;
+    color: var(--primaryColor);
+    background-color: var(--secondaryColor);
+    font-size: 12px;
+}
+.connected-section{
+    width: 100%;
+}
+.connected-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: auto;
+    max-height: 55vh;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+.connected-user{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+.user-avatar-box{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(53, 83, 83);
+    color: var(--secondaryColor);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user-name-css{
+    width: 100%;
+    font-size: 12px;
+    font-weight: 500;
+    text-wrap: wrap;
+    text-align: center;
+}
+.connected-user-text{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding-left:10px ;
+}
+.grid {
+    padding: 10px 0px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 20px; 
+  }
+
+.connected-list::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .connected-list::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .connected-list::-webkit-scrollbar-thumb {
+    background: var(--secondaryColor);
+    border-right:2px solid var(--primaryColor) ;
+  }
+  .connected-list::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  

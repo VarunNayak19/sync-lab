@@ -1,0 +1,107 @@
+.home-page-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container{
+    height: auto;
+    width: 500px;
+    max-width: 500px;
+    padding: 20px 30px;
+    border-radius: 24px;
+    background-color: var(--secondaryColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width:768px) {
+        width: 90%;
+    }
+
+}
+
+.logo-css{
+    height: 36px !important;
+    width: auto !important;
+    filter: none !important;
+    margin: auto;
+}
+
+.form-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.invitation-label-css{
+    font-size: 14px;
+    font-weight: 500;
+}
+.invitation-label-id-css
+{
+    font-weight: 800;
+    color: var(--primaryColor);
+}
+
+.input-group-css{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.input-box-css{
+    width: 100%;
+    border: 1px solid rgba(128, 128, 128, 0.527);
+    border-radius: 6px;
+    padding: 4px 12px;
+    height: 40px;
+    font-weight: 600;
+    color: var(--ternaryColor);
+}
+
+.input-box-css:focus {
+    border: 2px solid var(--primaryColor); 
+    outline: none;
+}
+
+.no-invite-css{
+    text-align: end;
+}
+
+.create-new-text{
+    text-wrap: nowrap;
+}
+
+
+/* ripple code */
+.ripple {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .ripple-effect {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    transform: scale(0);
+    animation: ripple-animation 0.4s linear;
+  }
+  
+  @keyframes ripple-animation {
+    to {
+      transform: scale(5);
+      opacity: 0;
+    }
+  }
